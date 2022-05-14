@@ -698,7 +698,7 @@ a {
 
 }
 /* Планшет */
-@media (max-width: 575px) {
+@media (max-width: 576px) {
 
     /* Assortment */
     .assortment__item {
