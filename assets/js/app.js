@@ -5,9 +5,14 @@ $(function() {
     // Nav Toggle mobile======================================================
     let navToggle = $('#navToggle');
     let nav = $('#nav');
-    let nav_we = $('#nav_we');
-    // let navH = nav.innerHeight();
-    // console.log(navH);
+    let navWe = $('#navWe');
+    let logoText = $('#logoText');
+
+    let navH = nav.innerHeight();
+
+
+    console.log(navH);
+
 
 
 
@@ -22,10 +27,19 @@ $(function() {
         $(this).toggleClass('active');
 
         nav.toggleClass('show');
-        nav_we.toggleClass('show');
-
+        navWe.toggleClass('show');
         header.toggleClass('header-dark');
+        logoText.toggleClass('logo__text-white');
+
         $('body').toggleClass('no-scroll');
+
+
+        document.querySelector('#navWe').style.top = 'top' + navH
+
+        // navWe.css({
+        //     top: 'calc(100% + $('navH'))'
+        // })
+
 
     });
 
@@ -33,10 +47,14 @@ $(function() {
     $(window).on('resize', function() {
         navToggle.removeClass('active');
         nav.removeClass('show');
-        nav_we.removeClass('show');
+        navWe.removeClass('show');
         header.removeClass('header-dark');
+        logoText.removeClass('logo__text-white');
+
 
         $('body').removeClass('no-scroll');
+
+
 
     });
 
@@ -44,7 +62,7 @@ $(function() {
 
 
 
-
+    header = $("#header");
     headerH = header.innerHeight();
 
     // Smooth scrool to the sections======================================================
@@ -57,10 +75,14 @@ $(function() {
 
         navToggle.removeClass('active');
         nav.removeClass('show');
-        nav_we.removeClass('show');
-        $('body').removeClass('no-scroll');
+        navWe.removeClass('show');
 
         header.removeClass('header-dark');
+        logoText.removeClass('logo__text-white');
+
+        $('body').removeClass('no-scroll');
+
+
 
         $("html, body").animate({
             scrollTop: scrollElPos - headerH
@@ -84,8 +106,10 @@ $(function() {
 
         navToggle.removeClass('active');
         nav.removeClass('show');
-        nav_we.removeClass('show');
+        navWe.removeClass('show');
         header.removeClass('header-dark');
+        logoText.removeClass('logo__text-white');
+
 
 
     });
