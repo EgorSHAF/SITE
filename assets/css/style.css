@@ -666,8 +666,7 @@ a {
         margin: 0;
 
         position: absolute;
-        /* top: calc(100% + 535px); */
-        top: 100%;
+        top: calc(100% + 535px);
 
         left: 0;
         right: 0;
