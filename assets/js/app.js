@@ -34,7 +34,7 @@ $(function() {
         $('body').toggleClass('no-scroll');
 
 
-        document.querySelector('#navWe').style.top = 'top' + navH
+        // document.querySelector('#navWe').style.top = 'top' + navH
 
         // navWe.css({
         //     top: 'calc(100% + $('navH'))'
