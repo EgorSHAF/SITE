@@ -163,8 +163,8 @@ $(function() {
         arrows: false,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1000,
+        autoplaySpeed: 2000,
+        speed: 400,
         fade: true
 
     });
