@@ -861,14 +861,16 @@ a {
 /* Планшет */
 @media (max-width: 575px) {
 
+    .intro {
+        height: 100vh;
+    }
+
+
     .products {
         padding-top: 20px;
     }
 
-    /* Intro */
-    .intro {
-        height: 80vh;
-    }
+
 
     /* Assortment */
     .assortment__item {
@@ -914,7 +916,7 @@ a {
         padding: 100px 0;
     }
     .section__title {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
 
