@@ -911,24 +911,21 @@ a {
 
     }
 
+    .catalog {
+        font-size: 30px;
+    }
+
     /* Section */
     .section__about {
         padding: 100px 0;
     }
-    .section__title {
-        margin-bottom: 80px;
-    }
+
 
 
 }
 
 @media(max-width: 350px) {
 
-    /* Section */
-
-    .section__title {
-        margin-bottom: 80px;
-    }
 
 
      /* Modal */
