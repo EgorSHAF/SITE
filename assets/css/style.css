@@ -877,7 +877,7 @@ a {
 
 }
 /* Планшет */
-@media (max-width: 575px) {
+@media (max-width: 576px) {
 
     .intro {
         height: calc(100vh - 50px);
