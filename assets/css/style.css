@@ -957,7 +957,7 @@ a {
 
 }
 
-@media(max-width: 350px) {
+@media(max-width: 360px) {
 
 
 
@@ -973,6 +973,40 @@ a {
         top: -25px;
         z-index: 2001;
     }
+
+    .nav__link {
+        font-size: 21px;
+    
+        margin: 0 5px;
+    }
+
+    .nav__link_we {
+        font-size: 21px;
+    
+        margin: 0 5px;
+    }
+
+    .nav__link_we.about {
+        font-size: 21px;
+    
+        margin: 0 5px;
+    }
+
+    .catalog {
+        font-size: 21px;
+        
+        margin: 0 5px;
+    }
+
+    .nav_we {
+        top: calc(100% + 377.5px);
+    }
+
+    .nav_we.about {
+        top: calc(100% + 91.5px);
+    }
+
+
 }
 
 
