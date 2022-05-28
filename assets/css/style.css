@@ -287,6 +287,8 @@ a {
     position: relative;
 
     background-color: #000;
+
+    margin-bottom: 60px
 }
 
 
@@ -403,9 +405,19 @@ a {
     transition: background-color .2s linear, border-color .2s linear;
 }
 
+
+.description {
+   font-size: 21px;
+   line-height: 1.5;
+   font-family: 'Roboto', sans-serif;
+   color: #2c2525;
+
+}
+
+
 /* products */
 .products {
-    padding-top: 100px;
+    margin-top: 60px;
 }
 
 /* Section */
@@ -707,6 +719,11 @@ a {
         margin: 0 8px;
 
     }
+
+    .intro {
+        height: calc(80vh - 50px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 945px) {
@@ -879,13 +896,11 @@ a {
 /* Планшет */
 @media (max-width: 575px) {
 
-    .intro {
-        height: calc(100vh - 50px);
-    }
+   
 
 
     .products {
-        padding-top: 20px;
+        margin-top: 20px;
     }
 
 
