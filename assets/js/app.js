@@ -63,6 +63,16 @@ $(function() {
 
     });
 
+    $('.nav_shade').on('click', function() {
+        navToggle.removeClass('active');
+        nav.removeClass('show');
+        logo.removeClass('show');
+        navShade.removeClass('active');
+
+
+        $('body').removeClass('no-scroll');
+    });
+
 
 
 

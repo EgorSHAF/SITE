@@ -220,6 +220,7 @@ a {
 }
 
 
+
 /* Burger */
 .burger {
     position: relative;
@@ -781,6 +782,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 10px
     }
 
 
@@ -800,8 +802,7 @@ a {
 
     .logo__phone {
         display: block;
-        padding-right: 20px;     
-        padding-top: 2.5px;   
+        padding: 2.5px 20px 0 0;  
         text-decoration: none;
         color: #000;
         
@@ -891,7 +892,7 @@ a {
 
     .nav__phone {
         display: flex;
-        width: 90%;
+        width: 85%;
     }
 
     
