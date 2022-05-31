@@ -1,12 +1,12 @@
 $(function() {
 
-    let header = $("#header");
-    let headerH = header.innerHeight();
+   
     // Nav Toggle mobile======================================================
     let navToggle = $('#navToggle');
+    let navToggleClose = $('#navToggleClose');
+    let navShade = $('#navShade');
     let nav = $('#nav');
-    let navWe = $('#navWe');
-    let logoText = $('#logoText');
+    let logo = $('#logo');
 
     let navH = nav.innerHeight();
 
@@ -24,21 +24,28 @@ $(function() {
 
 
         $(this).toggleClass('active');
+        navShade.toggleClass('active');
 
         nav.toggleClass('show');
-        navWe.toggleClass('show');
-        header.toggleClass('header-dark');
-        logoText.toggleClass('logo__text-white');
+        logo.toggleClass('show');
 
         $('body').toggleClass('no-scroll');
 
+    });
 
-        // document.querySelector('#navWe').style.top = 'top' + navH
+    navToggleClose.on('click', function(event) {
+        event.preventDefault();
 
-        // navWe.css({
-        //     top: 'calc(100% + $('navH'))'
-        // })
 
+        $(this).removeClass('active');
+        navToggle.removeClass('active');
+        navShade.removeClass('active');
+        
+
+        nav.removeClass('show');
+        logo.removeClass('show');
+
+        $('body').removeClass('no-scroll');
 
     });
 
@@ -46,9 +53,8 @@ $(function() {
     $(window).on('resize', function() {
         navToggle.removeClass('active');
         nav.removeClass('show');
-        navWe.removeClass('show');
-        header.removeClass('header-dark');
-        logoText.removeClass('logo__text-white');
+        logo.removeClass('show');
+        navShade.removeClass('active');
 
 
         $('body').removeClass('no-scroll');
@@ -73,13 +79,13 @@ $(function() {
         let scrollElPos = $(scrollEl).offset().top;
 
         navToggle.removeClass('active');
+        navShade.removeClass('active');
         nav.removeClass('show');
-        navWe.removeClass('show');
 
-        header.removeClass('header-dark');
-        logoText.removeClass('logo__text-white');
+        logo.removeClass('show');
 
         $('body').removeClass('no-scroll');
+
 
 
 
@@ -104,10 +110,10 @@ $(function() {
         });
 
         navToggle.removeClass('active');
+        navShade.removeClass('active');
         nav.removeClass('show');
-        navWe.removeClass('show');
-        header.removeClass('header-dark');
-        logoText.removeClass('logo__text-white');
+        logo.removeClass('show');
+        
 
 
 

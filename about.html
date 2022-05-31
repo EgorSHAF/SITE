@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="assets/css/aos.css?v=1.0.0">
+    <link rel="stylesheet" href="index.html?v=1.0.0">
+    <link rel="stylesheet" href="about.html?v=1.0.0">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
@@ -30,18 +30,35 @@
                     <span class="logo__text" id="logoText">ModeJewels</span>
                 </a>
 
-                <nav class="nav" id="nav">
+                <!-- PC Navigation -->
+                <nav class="nav">
                     <a class="nav__link" href="index.html">
                         <div class="catalog">Магазин</div>
                     </a>
                 </nav>
-
-                <nav class="nav_we about" id="navWe">
-                    <a class="nav__link_we about" href="about.html">О нас</a>
-                    <a class="nav__link_we about" href="#" data-modal="#contacts">Контакты</a>
+                <nav class="nav">
+                    <a class="nav__link" href="about.html">О нас</a>
+                    <a class="nav__link" href="#" data-modal="#contacts">Контакты</a>
                 </nav>
 
-
+                <!-- Phone Navigation -->
+                <div class="nav_shade" id="navShade"></div>                    
+                <nav class="nav__phone" id="nav">
+                    <div class="nav__phone-header">
+                        <button class="burger-close" type="button" id="navToggleClose">
+                            <span class="burger__line-close">1</span>
+                            <span class="burger__line-close">2</span>
+                        </button>
+                        <a class="logo__phone" id="logoPhone" href="index.html">
+                            <img class="logo__icon" src="assets/images/loggo.jpg" alt="znak">
+                            <span class="logo__text">ModeJewels</span>
+                        </a>
+                    </div>
+                    <a class="nav__link" href="index.html">Магазин</a>
+                    <a class="nav__link" href="about.html">О нас</a>
+                    <a class="nav__link" href="#" data-modal="#contacts">Контакты</a>
+                </nav>
+                   
                 <button class="burger" type="button" id="navToggle">
                     <span class="burger__line">1</span>
                     <span class="burger__line">2</span>
@@ -85,7 +102,7 @@
                     <img class="social__link-img" width="32px" src="assets/images/telegram.svg" alt="">
                 </a>
                 <a class="social__link" href="https://vk.com/id363376145">
-                    <img class="social__link-img img" width="32px" src="assets/images/vk.svg" alt="">
+                    <img class="social__link-img" width="32px" src="assets/images/vk.svg" alt="">
                 </a>
             </div>
         </div>
@@ -113,6 +130,6 @@
   <!-- JavaScript -->
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/aos.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app.js?v=1.0.0"></script>
 </body>
 </html>
